@@ -27,7 +27,7 @@ h1{
 }
 p{
     font-size: 30px;
-    font-weight: 700;
+    font-weight: 500;
     color: var(--white);
     text-shadow: 50px 0px 50px var(--black);
 }
@@ -64,17 +64,21 @@ button:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-weight: 7c00;
+    font-weight: 700;
     text-transform: uppercase;
     height: 30px;
-    background: var(--white);
+    color: var(--white);
 }
 small{
     font-weight: 600;
     color: var(--crimson);
     background:var(--black);
+    height: 70px;
+    width: 450px;
     font-size: 14px;
     text-align: center;
+    padding-top: 20px;
+    border-radius: 10px;;
 }
 .container-pizzas{
     display: flex;
@@ -84,8 +88,7 @@ small{
     height: 80px;
     width: 750px;
     color: white;
-    background: var(--black);
-    border-radius: 10px;;
+    border-radius: 5px;;
 }
 h2, h4{
     color: white;
