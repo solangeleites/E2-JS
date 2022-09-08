@@ -42,16 +42,17 @@ const d = document;
 const $form = d.getElementById('form')
 const $input = d.getElementById('input')
 const $containerPizza = d.getElementById('pizzas')
-    
+
     //* Creo esta funcion para buscar el id
 const buscarPizza = value => {
     let pizzaEncontrada = pizza.find(pizza => pizza.id === Number(value));
     return pizzaEncontrada;
 }
+
     //* Creo esta funcion para renderizar
 const pizzaRender = pizza => {
     const {id, name} = pizza;
-    return `<h2>La pizza que vas a pedir para comer hoy es:  ${pizza.name}</h2> 
+    return `<h2>La pizza que vas a pedir para comer hoy es: ${pizza.name}</h2> 
             <h4>Precio: $${pizza.price}</h4>`
 }
 
@@ -77,7 +78,7 @@ const pizzaRender = pizza => {
         } else {  
             let pizzaEncontrada = buscarPizza(guardarValor);
             $containerPizza.innerHTML = pizzaRender(pizzaEncontrada);
-        }
+        }        
 }
 
 //* Funcion para inicializar
